@@ -1,6 +1,6 @@
 package aug;
 
-public class lab6 {
+public class lab6_7_8 {
 
     private String fName;
     private String lName;
@@ -11,7 +11,6 @@ public class lab6 {
         M, F
     }
 
-    // Method to set all the details of a person
     public void setDetails(String fName, String lName, Gender gender, String phone) {
         this.fName = fName;
         this.lName = lName;
@@ -19,7 +18,6 @@ public class lab6 {
         this.phone = phone;
     }
 
-    // Getters
     public String getFName() {
         return fName;
     }
@@ -36,7 +34,6 @@ public class lab6 {
         return phone;
     }
 
-    // Display method to print details
     public void display() {
         System.out.println("Person Details:");
         System.out.println("--------------------");
@@ -48,7 +45,7 @@ public class lab6 {
 
     // Main method to test the class
     public static void main(String[] args) {
-        lab6 person = new lab6();
+    	lab6_7_8 person = new lab6_7_8();
         person.setDetails("TUMMALA", "VENKATESH", Gender.M, "9876543210");
         person.display();
     }
