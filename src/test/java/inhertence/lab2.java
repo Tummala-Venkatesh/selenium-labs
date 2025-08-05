@@ -4,9 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-// ===========================
-// Person class
-// ===========================
 class Person {
     private String name;
     private String gender;
@@ -35,9 +32,6 @@ class Person {
     }
 }
 
-// ===========================
-// Account class
-// ===========================
 class Account {
     private String accNumber;
     private String accHolderName;
@@ -69,9 +63,6 @@ class Account {
     }
 }
 
-// ===========================
-// SavingsAccount class
-// ===========================
 class SavingsAccount extends Account {
     private double interestRate;
 
@@ -90,9 +81,6 @@ class SavingsAccount extends Account {
     }
 }
 
-// ===========================
-// CurrentAccount class
-// ===========================
 class CurrentAccount extends Account {
     private double overdraftLimit;
 
@@ -101,10 +89,9 @@ class CurrentAccount extends Account {
         this.overdraftLimit = overdraftLimit;
     }
 
-    @Override
     public void withdraw(double amount) {
         if (getBalance() + overdraftLimit >= amount)
-            deposit(-amount); // same as deducting
+            deposit(-amount); 
         else
             System.out.println("Overdraft limit exceeded.");
     }
@@ -114,24 +101,20 @@ class CurrentAccount extends Account {
     }
 }
 
-// ===========================
-// Main class
-// ===========================
 public class lab2 {
     public static void main(String[] args) {
-        // Create a Person
+     
         Person person = new Person("Tummala Venkatesh", "Male", LocalDate.of(2002, 8, 15));
         System.out.println("=== Person Info ===");
         System.out.println(person);
 
-        // Create SavingsAccount
+      
         SavingsAccount savings = new SavingsAccount("S123", "Tummala Venkatesh", 5000.0, 5.0);
         System.out.println("\n=== Savings Account ===");
         savings.deposit(1000);
         savings.addInterest();
         System.out.println(savings);
 
-        // Create CurrentAccount
         CurrentAccount current = new CurrentAccount("C456", "Tummala Venkatesh", 2000.0, 1000.0);
         System.out.println("\n=== Current Account ===");
         current.withdraw(2500); // within overdraft
