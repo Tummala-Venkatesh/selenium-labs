@@ -7,14 +7,14 @@ import java.util.Scanner;
 
 public class lab12 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
-        String d1 = scanner.nextLine();
+        String d1 = sc.nextLine();
         LocalDate date1 = LocalDate.parse(d1, formatter);
 
 
-        String d2 = scanner.nextLine();
+        String d2 = sc.nextLine();
         LocalDate date2 = LocalDate.parse(d2, formatter);
 
         if (date1.isAfter(date2)) {

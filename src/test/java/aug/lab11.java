@@ -8,11 +8,11 @@ import java.util.Scanner;
 public class lab11 {
     public static void main(String[] args) {
        
-        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
       
         System.out.print("dd-MM-yyyy:");
-        String inputDate = scanner.nextLine();
+        String inputDate = s.nextLine();
 
     
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
