@@ -1,8 +1,8 @@
 package exception_handling;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
-class Employee {
+/*class Employee {
     private String name;
     private double salary;
 
@@ -14,7 +14,11 @@ class Employee {
         this.salary = salary;
     }
 
-    public void display() {
+    public Employee(String name2, int salary2) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void display() {
         System.out.println("Employee Name: " + name);
         System.out.println("Salary: ₹" + salary);
     }
@@ -40,4 +44,4 @@ public class lab3 {
             scanner.close();
         }
     }
-}
+}*/

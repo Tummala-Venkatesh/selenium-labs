@@ -550,7 +550,7 @@
         ["xpath=//div[@id='content']/div[2]/div/input", "xpath:idRelative"],
         ["xpath=//div[2]/div/div/div[2]/div/input", "xpath:position"]
       ],
-      "value": ""
+      "value": "laptop"
     }, {
       "id": "54659f30-460e-4aa8-aa89-896a0258add6",
       "comment": "",
@@ -629,7 +629,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["712ae27b-f554-4ec0-af1f-b819afd8132d"]
+    "tests": ["712ae27b-f554-4ec0-af1f-b819afd8132d", "497fe405-e8ce-4879-9bd4-c51fdea58cf9", "bb020eef-cac5-4df7-8597-c2f74b97652b", "990f0ab0-b575-48b5-85b5-27e3dcb63e5e"]
   }],
   "urls": ["https://demo.opencart.com/", "https://www.google.com/"],
   "plugins": []

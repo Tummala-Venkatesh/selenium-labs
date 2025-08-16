@@ -1,6 +1,6 @@
 package inhertence;
 
-import java.time.LocalDate;
+/* import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -122,3 +122,4 @@ public class lab2 {
         System.out.println(current);
     }
 }
+*/
