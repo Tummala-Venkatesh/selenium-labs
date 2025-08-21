@@ -9,7 +9,7 @@
       <class name="Selenium_TestNG.Lab_9"/>
     </classes>
   </test>
-  
+ 
   <!-- Firefox Test -->
   <test thread-count="5" name="firefoxtest">
     <parameter name="browser" value="firefox" />
