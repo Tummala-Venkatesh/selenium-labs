@@ -95,7 +95,7 @@ public class Lab_14 {
         Object[][] data = new Object[validRows][colcount];
 
         int index = 0;
-        for (int i = 1; i < rowcount; i++) { // start at 1 → skip header
+        for (int i = 1; i < rowcount; i++) { 
             if (worksheet1.getRow(i) != null &&
                 worksheet1.getRow(i).getCell(0) != null &&
                 !formatter.formatCellValue(worksheet1.getRow(i).getCell(0)).trim().isEmpty()) {
